@@ -9,6 +9,7 @@ This is a fairly basic slideshow, written in javascript. This is a dual-purpose 
 * full-screen toggle using HTML5 fullscreen api
 * swipe events supported on touch devices (requires [hammer.js](https://github.com/hammerjs/hammer.js))
 * written in vanilla JS--this means no jQuery dependency (much :sparkling_heart: for [jQuery](https://github.com/jquery/jquery) though!)
+* can be used with require() 
 
 ## Getting Started
 
@@ -18,7 +19,7 @@ This is a fairly basic slideshow, written in javascript. This is a dual-purpose 
         <div class="bss-slides">
             <figure>
                 <img src="path/to/img" width="100%" />
-                <figcaption>Caption goes here</figcaption> 
+                <figcaption>Caption goes here</figcaption>
             </figure>
 
             <!-- more figures here as needed -->
@@ -41,18 +42,18 @@ To customize functionality, create an options object, then pass it into `makeBSS
 
 var opts = {
             //auto-advancing slides? accepts boolean (true/false) or object
-            auto : { 
+            auto : {
                 // speed to advance slides at. accepts number of milliseconds
-                speed : 2500, 
+                speed : 2500,
                 // pause advancing on mouseover? accepts boolean
-                pauseOnHover : true 
+                pauseOnHover : true
             },
             // show fullscreen toggle? accepts boolean
-            fullScreen : true, 
+            fullScreen : true,
             // support swiping on touch devices? accepts boolean, requires hammer.js
-            swipe : true 
+            swipe : true
         };
-        
+
 makeBSS('.bss-slides', opts);
 ```
 
