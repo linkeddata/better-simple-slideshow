@@ -1,3 +1,4 @@
+
 var makeBSS = function (el, options) {
     if (typeof document === 'undefined') {
       var document = options.dom;
@@ -162,3 +163,7 @@ var makeBSS = function (el, options) {
         $slideshow.init(el, options);
     });
 };
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = makeBSS
+}
