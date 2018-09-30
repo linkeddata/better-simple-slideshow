@@ -1,5 +1,5 @@
 {
-  "name": "better-simple-slideshow",
+  "name": "@solid/better-simple-slideshow",
   "version": "0.1.0",
   "main": "js/better-simple-slideshow.js",
   "devDependencies": {
